@@ -6,6 +6,7 @@ use structopt::StructOpt;
 use std::process::{exit};
 use num_format::{SystemLocale, ToFormattedString};
 use cli::InputOptions;
+use std::fmt::Display;
 
 fn main() {
     let opt: InputOptions = InputOptions::from_args();
@@ -30,7 +31,7 @@ fn main() {
                     break;
                 }
             }
-            Err(error) => abort(error.to_string().as_str())
+            Err(error) => abort(error)
         }
 
         if opt.verbose {
@@ -40,7 +41,7 @@ fn main() {
     }
 }
 
-fn abort(error: &str) -> ! {
+fn abort<T: Display>(error: T) -> ! {
     eprintln!("waitfor: error: {}", error);
     exit(1);
 }
