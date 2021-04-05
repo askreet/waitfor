@@ -1,0 +1,9 @@
+[package]
+name = "waitfor"
+version = "0.1.0"
+authors = ["Kyle Smith <askreet@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.3"
+num-format = { version = "0.4", features = ["with-system-locale"] }
