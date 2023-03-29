@@ -1,8 +1,13 @@
 [package]
 name = "waitfor"
+description = "CLI utility to retry commands until they exit 0"
+homepage = "https://github.com/askreet/waitfor"
+repository = "https://github.com/askreet/waitfor"
+readme = "README.md"
 version = "0.1.0"
 authors = ["Kyle Smith <askreet@gmail.com>"]
-edition = "2018"
+edition = "2021"
+license = "BSD-2-Clause"
 
 [dependencies]
 structopt = "0.3"
