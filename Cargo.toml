@@ -1,5 +1,5 @@
 [package]
-name = "waitfor"
+name = "waitfor-cli"
 description = "CLI utility to retry commands until they exit 0"
 homepage = "https://github.com/askreet/waitfor"
 repository = "https://github.com/askreet/waitfor"
